@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hacking in Progress...</title>
+<style>
+    body {
+        background: black;
+        color: #00ff00;
+        font-family: "Courier New", Courier, monospace;
+        padding: 20px;
+    }
+    #output {
+        white-space: pre;
+        font-size: 16px;
+    }
+</style>
+</head>
+<body>
+<h1>Accessing Target Device...</h1>
+<div id="output"></div>
+
+<script>
+const messages = [
+    "Initializing hack protocol...",
+    "Bypassing firewall...",
+    "Cracking password...",
+    "Accessing Instagram...",
+    "Downloading contacts...",
+    "Injecting fake malware...",
+    "Thanks for clicking on link"
+];
+
+let i = 0;
+const outputDiv = document.getElementById("output");
+
+function showMessage() {
+    if(i < messages.length){
+        outputDiv.textContent += messages[i] + "\n";
+        i++;
+        setTimeout(showMessage, 1500);
+    } else {
+        outputDiv.textContent += "\n=== Devil ===\n";
+    }
+}
+
+showMessage();
+</script>
+</body>
+</html>
